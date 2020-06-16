@@ -1,0 +1,33 @@
+{
+  "name": "react-components",
+  "version": "1.0.0",
+  "description": "Reusable React components for your next project.",
+  "homepage": "",
+  "author": {
+    "name": "Adam Knee",
+    "email": "adamlknee@gmail.com",
+    "url": "https://adamscool.tech"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdamAnSubtractM/react-components.git"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.47",
+    "@types/react": "^16.9.36",
+    "@types/react-dom": "^16.9.8",
+    "typescript": "^3.7.3"
+  },
+  "license": "(ISC OR GPL-3.0)"
+}
