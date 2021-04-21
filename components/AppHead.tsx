@@ -10,9 +10,16 @@ const AppHead: React.FC<AppHeadProps> = ({ title }) => (
     <title>{title}</title>
     <meta charSet="utf-8" />
     <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#6a57dc" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#6a57dc" />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Playfair+Display:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <meta

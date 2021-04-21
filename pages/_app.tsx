@@ -7,16 +7,18 @@ import { DefaultTheme } from "styled-components";
 
 const GlobalAppStyles = createGlobalStyle`
   :root {
-    --main-purple: #5B55FF;
-    --secondary-purple: #756FFF;
-    --light-purple: #DAD4FF;
-    --main-black: #333333;
-    --secondary-black: #4D4D4D;
+    --main-purple: #6a57dc;
+    --secondary-purple: #A77FFA;
+    --light-purple: #C4C6FC;
+    --main-black: #000000;
+    --secondary-black: #282828;
     --main-white: #ffffff;
     --secondary-white: #f2f2f2;
     --main-gray: #CCCCCC;
-    --secondary-gray: #B3B3B3;
+    --secondary-gray: #ededf0;
     --light-gray: #E6E6E6;
+    --main-green: #3BFFB7;
+    --main-red: #ff3b3b;
   }
   *, ::after, ::before {
     box-sizing: border-box;
@@ -28,10 +30,11 @@ const GlobalAppStyles = createGlobalStyle`
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: transparent;
     font-size: 62.5%;
+    background: var(--main-white);
   }
   body {
     font-size: 1.6rem;
-    font-family: 'Playfair Display', monospace, serif;
+    font-family: 'Roboto', serif;
     font-weight: 400;
     color: ${(props) => props.theme.colors.mainContent};
     background-color: ${(props) => props.theme.colors.mainBg}
@@ -39,6 +42,7 @@ const GlobalAppStyles = createGlobalStyle`
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
     color: ${(props) => props.theme.colors.mainHeadings};
+    text-transform: lowercase;
   }
   h1 {
     font-size: 4rem;
@@ -61,6 +65,7 @@ const GlobalAppStyles = createGlobalStyle`
   a {
     color: ${(props) => props.theme.colors.links};
     text-decoration: underline;
+    text-transform: lowercase;
     cursor: pointer;
     &:visited {
       color: ${(props) => props.theme.colors.links};

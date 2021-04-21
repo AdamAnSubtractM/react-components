@@ -10,9 +10,10 @@ interface CodeSnippetProps {
 
 const StyledPre = styled.pre`
   text-align: left;
-  margin: 1em 0;
-  padding: 0.5em;
-  overflow: scroll;
+  padding: 2rem 2.5rem;
+  overflow: auto;
+  max-height: inherit;
+  border-radius: 45px;
 `;
 
 const StyledOverflowWrapper = styled.div`

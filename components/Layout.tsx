@@ -35,7 +35,7 @@ const StyledPageWrapper = styled.section`
   align-items: flex-start;
   justify-content: space-around;
   min-height: 92vh;
-  @media all and (min-width: 800px) {
+  @media all and (min-width: ${(props) => props.theme.sizing.md}) {
     flex-flow: row wrap;
     align-items: stretch;
     justify-content: space-between;
@@ -46,19 +46,21 @@ const StyledAside = styled.aside`
   display: flex;
   align-items: center;
   padding: 1rem;
-  @media all and (min-width: 800px) {
+  @media all and (min-width: ${(props) => props.theme.sizing.md}) {
     border-right: 1px solid gray;
     width: 25%;
   }
 `;
 
 const StyledMainContent = styled.main`
+  background-color: aquamarine;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem;
   margin: auto;
-  @media all and (min-width: 800px) {
+  max-width: 1000px;
+  @media all and (min-width: ${(props) => props.theme.sizing.md}) {
     width: 75%;
   }
 `;
@@ -80,28 +82,42 @@ const StyledBrandingWrap = styled.div`
 `;
 
 const StyledLogo = styled.span`
+  display: flex;
+  justify-content: center;
+  align-content: center;
   margin-right: 1rem;
   svg {
-    width: 45px;
+    width: 30px;
+    @media all and (min-width: ${(props) => props.theme.sizing.sm}) {
+      width: 45px;
+    }
   }
 `;
 
 const StyledLogoText = styled.h2`
-  display: inline;
+  font-size: 2rem;
+  display: none;
   color: ${(props) => props.theme.colors.mainHeadings};
   margin: 0;
   padding: 0.5rem 0;
+  @media all and (min-width: ${(props) => props.theme.sizing.md}) {
+    display: inline-flex;
+    align-self: center;
+  }
+  @media all and (min-width: ${(props) => props.theme.sizing.lg}) {
+    font-size: 3rem;
+  }
 `;
 
 const logo = {
-  desc: `ReactComponents.io Logo`,
+  desc: `reactcomponents.io logo.`,
   src: `/logo.svg`,
-  text: `React Components`,
+  text: `reactcomponents.io`,
 };
 
 const Layout: React.FC<LayoutProps> = ({
   children,
-  title = "React Components | Reusable components for your next project.",
+  title = "reactcomponents.io | Reusable components for your next project.",
   componentsList,
   setTheme,
   themeId,

@@ -10,9 +10,17 @@ declare module "styled-components" {
       mainHeadings: string;
       mainContent: string;
       mainPurple: string;
+      mainButton: string;
       links: string;
       borderMain: string;
       switch: string;
+    };
+    sizing: {
+      xs: string;
+      sm: string;
+      md: string;
+      lg: string;
+      xl: string;
     };
   }
 }
